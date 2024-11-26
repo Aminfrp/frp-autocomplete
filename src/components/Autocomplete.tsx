@@ -5,7 +5,7 @@ import { AutocompleteItem } from "./AutocompleteItem.component";
 import ChevronDown from "./ChevronDown.icon";
 import CloseIcon from "./Close.icon";
 
-const Autocomplete = (props: PropsWithChildren<IAutocomplete>) => {
+export const Autocomplete = (props: PropsWithChildren<IAutocomplete>) => {
   const {
     containerClass = "",
     selectClass = "",
@@ -106,5 +106,3 @@ const Autocomplete = (props: PropsWithChildren<IAutocomplete>) => {
 
 Autocomplete.Input = AutocompleteInput;
 Autocomplete.Item = AutocompleteItem;
-
-export default Autocomplete;
