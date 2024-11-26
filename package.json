@@ -1,23 +1,17 @@
 {
   "name": "frp-autocomplete",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "type": "module",
   "author": "Amin Firoozpour",
-  "main": "./dist/frp-autocomplete.umd.js",
-  "module": "./dist/frp-autocomplete.js",
-  "exports": {
-    ".": {
-      "import": "./dist/frp-autocomplete.js",
-      "require": "./dist/frp-autocomplete.umd.js"
-    }
-  },
+  "main": "dist/frp-autocomplete.umd.js",
+  "module": "dist/frp-autocomplete.es.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "types": "./src/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
